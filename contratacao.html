@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Negociação</title>
+    <link rel="stylesheet" href="css/game-unified.css">
+</head>
+<body style="background: none;"> 
+
+    <div id="cenario-ativo" class="cenario-fundo">
+        <div class="conteiner">
+            <div style="display: flex; align-items: center; justify-content: center; gap: 20px; flex-wrap: wrap;">
+                <img id="foto" src="" style="width: 100px; border: 2px solid white; background: #fff;">
+                <div>
+                    <h2 id="nome" style="margin-top: 0;">Nome</h2>
+                    </div>
+            </div>
+
+            <div style="margin-top: 20px;">
+                <p>Afinidade: <span id="val-afinidade">0</span>%</p>
+                <div class="barra-fundo"><div id="bar-afinidade" class="barra-cheia" style="background: var(--verde);"></div></div>
+                
+                <p>Estresse: <span id="val-estresse">0</span>%</p>
+                <div class="barra-fundo"><div id="bar-estresse" class="barra-cheia" style="background: var(--vermelho);"></div></div>
+            </div>
+
+            <div class="painel-negociacao">
+                <p id="pergunta" style="font-size: 22px; color: var(--amarelo); margin-bottom: 20px; min-height: 60px;">...</p>
+                <div id="botoes" style="display: flex; flex-direction: column; gap: 10px;"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/sistema.js"></script>
+    <script src="js/contratacao.js"></script>
+</body>
+</html>

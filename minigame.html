@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Treino</title>
+    <link rel="stylesheet" href="css/game-unified.css">
+</head>
+<body>
+    <div class="conteiner">
+        <h1>TREINO</h1>
+        <p>Clique na bola para ganhar dinheiro!</p>
+        <p>Tempo: <span id="tempo">15</span>s | Ganho: $<span id="placar">0</span></p>
+        
+        <div class="campo-jogo" id="campo">
+            <button class="botao" onclick="iniciar()" id="btn-start" style="margin-top: 150px;">COMEÇAR</button>
+            <div id="bola" class="moeda" style="display: none;" onclick="clicar()">$</div>
+        </div>
+
+        <br>
+        <a href="index.html" class="botao botao-vermelho">SAIR</a>
+    </div>
+
+    <script src="js/sistema.js"></script>
+    <script src="js/minigame.js"></script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Olheiro - Menu</title>
+    <link rel="stylesheet" href="css/game-unified.css">
+</head>
+<body>
+    <div class="conteiner">
+        <h1>OLHEIRO MASTER</h1>
+        <p>Monte o maior time do mundo.</p>
+        <br>
+        
+        <a href="historia.html" class="botao">MODO HISTÓRIA</a><br>
+        <a href="loja.html" class="botao">LOJA DE CONTINENTES</a><br>
+        <a href="minigame.html" class="botao" style="color: yellow;">TREINO (GANHAR $)</a><br>
+        <a href="personagens.html" class="botao">MEU TIME</a><br>
+        <a href="sobrenos.html" class="botao">SOBRE NÓS</a><br>
+
+        <br><br>
+        <button onclick="zerarTudo()" class="botao botao-vermelho">REINICIAR</button>
+    </div>
+
+    <script src="js/sistema.js"></script>
+    <script>
+        function zerarTudo() {
+            if (confirm("Quer mesmo apagar tudo?")) {
+                localStorage.clear();
+                alert("Jogo reiniciado.");
+                location.reload();
+            }
+        }
+    </script>
+</body>
+</html>
